@@ -1,0 +1,5 @@
+#!/bin/bash
+
+npm run build
+
+scp -i ~/.ssh/id_rsa2 -r -P 22 dist/ content@212.109.195.201:/srv/santex/lk
